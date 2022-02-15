@@ -630,6 +630,10 @@ a {
   right: 8px;
 }
 
+.modal-close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
   fill: var(--accent-color);
@@ -676,6 +680,7 @@ a {
   border-radius: 4px;
   padding-left: 42px;
   outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -691,6 +696,7 @@ a {
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea {
@@ -701,6 +707,7 @@ a {
   padding: 12px 16px;
   resize: none;
   outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea:focus {
@@ -716,7 +723,7 @@ a {
 
 .modal-checkbox {
   display: flex;
-  align-items: center;
+  margin: 0 auto;
 }
 
 .checkbox-text {
@@ -752,16 +759,23 @@ a {
   fill: var(--accent-text-color);
 }
 
-/* .checkbox-link {
+.checkbox-link {
   display: flex;
-  margin-right: 5px;
-} */
+  align-items: center;
+  margin-left: 5px;
+}
+
 .checkbox-text-link {
   font-size: 14px;
   line-height: calc(24px / 14px);
   letter-spacing: 0.03em;
   text-decoration: underline;
   color: var(--accent-color);
+}
+
+.submit-btn {
+  margin: auto;
+  margin-top: 30px;
 }
 
 /*---------------------PORTFOLIO-----------------------*/
